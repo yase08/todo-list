@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue">
+
+        <LinearLayout
+            android:layout_width="55mm"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:background="@drawable/background_blur"
+            android:layout_height="60mm"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="35sp"
+                android:text="Digital"
+                android:layout_marginLeft="20sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="platform"
+                android:textSize="35sp"
+                android:layout_marginLeft="20sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="for managing"
+                android:textSize="35sp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="20sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="project tasks."
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20sp"
+                android:textColor="#929CCF"
+                android:layout_marginBottom="15sp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Manage tasks more practically."
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20sp"
+                android:textColor="#ffffff"
+                android:textFontWeight="100"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Make your team more productive."
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20sp"
+                android:textColor="#ffffff"
+                android:textFontWeight="100"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+</RelativeLayout>

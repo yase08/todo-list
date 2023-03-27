@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent" >
+            <ImageView
+                android:id="@+id/profilImage"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/profile_image"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/usernameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="16dp" />
+            <TextView
+                android:id="@+id/emailTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="user@gmail.com"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:paddingTop="8dp" />
+
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="100sp"
+                android:layout_height="48sp"
+                android:text="Log out"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_error" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

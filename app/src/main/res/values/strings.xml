@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Nyoba kotlin</string>
+    <string name="login">Log in</string>
+    <string name="email_hint">Enter your email</string>
+    <string name="password_hint">Enter your password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="items_option">
+        <item>Edit</item>
+        <item>Hapus</item>
+        <item>Batal</item>
+        <item>Lihat</item>
+    </string-array>
+</resources>

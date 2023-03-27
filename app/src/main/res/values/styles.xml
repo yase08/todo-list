@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="background" parent="android:Theme.Light">
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:textSize">20px</item>
+    </style>
+    <style name="FullscreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="FormError" parent="Widget.AppCompat.EditText">
+        <item name="colorError">@color/red</item>
+    </style>
+</resources>

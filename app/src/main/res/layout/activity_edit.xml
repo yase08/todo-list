@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Task"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="#333333"/>
+        <EditText
+            android:id="@+id/projectName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Project Name"
+            android:autofillHints="Project Name"
+            android:background="@drawable/border"
+            android:layout_below="@id/edit"
+            android:textSize="15sp"
+            android:layout_marginBottom="25dp"
+            android:paddingLeft="10dp"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/taskName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Task Name"
+            android:autofillHints="Task Name"
+            android:background="@drawable/border"
+            android:layout_below="@id/projectName"
+            android:textSize="15sp"
+            android:layout_marginBottom="25dp"
+            android:paddingLeft="10dp"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/assignTo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Assign To"
+            android:autofillHints="Assign To"
+            android:background="@drawable/border"
+            android:layout_below="@id/taskName"
+            android:textSize="15sp"
+            android:layout_marginBottom="25dp"
+            android:paddingLeft="10dp"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/sprint"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Sprint"
+            android:autofillHints="Sprint"
+            android:background="@drawable/border"
+            android:layout_below="@id/assignTo"
+            android:textSize="15sp"
+            android:layout_marginBottom="25dp"
+            android:paddingLeft="10dp"
+            android:inputType="number"/>
+        <EditText
+            android:id="@+id/startDate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Start Date"
+            android:clickable="false"
+            android:background="@drawable/border"
+            android:drawableRight="@drawable/baseline_date_range_24"
+            android:drawableEnd="@drawable/baseline_date_range_24"
+            android:layout_below="@id/sprint"
+            android:textSize="15sp"
+            android:layout_marginBottom="25dp"
+            android:paddingLeft="12dp"
+            android:padding="12dp"
+            android:focusableInTouchMode="false"
+            android:focusable="false" />
+        <EditText
+            android:id="@+id/endDate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="End Date"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:background="@drawable/border"
+            android:drawableRight="@drawable/baseline_date_range_24"
+            android:drawableEnd="@drawable/baseline_date_range_24"
+            android:layout_below="@id/startDate"
+            android:textSize="15sp"
+            android:layout_marginBottom="25dp"
+            android:paddingLeft="12dp"
+            android:padding="12dp"
+            android:focusable="false" />
+        <EditText
+            android:id="@+id/layout_attachment"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Attachment"
+            android:autofillHints="Sprint"
+            android:background="@drawable/border"
+            android:layout_below="@id/endDate"
+            android:textSize="15sp"
+            android:layout_marginBottom="25dp"
+            android:paddingLeft="10dp"
+            android:inputType="text"/>
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:textAllCaps="false"
+            android:text="Edit Task"
+            android:textColor="#ffffff"
+            android:background="@drawable/button"
+            android:layout_below="@+id/layout_attachment"
+            android:layout_marginTop="30dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

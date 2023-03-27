@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/detailTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:text="Detail Task"/>
+
+    <TextView
+        android:id="@+id/project_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@id/detailTask"
+        android:layout_marginStart="16dp"
+        android:text="Project Name:" />
+
+    <TextView
+        android:id="@+id/projectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/project_name"
+        android:layout_toRightOf="@id/project_name"
+        android:text="Project Name"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/task_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Name:"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:layout_below="@id/projectName"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/taskName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/task_name"
+        android:layout_toRightOf="@id/task_name"
+        android:text="Task Name"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/assign_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assign To:"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/taskName"
+        android:textSize="18sp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/assignTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/assign_to"
+        android:layout_toRightOf="@id/assign_to"
+        android:text="Assign To"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/sprintt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sprint:"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:layout_below="@id/assignTo"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/sprint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/sprintt"
+        android:layout_toRightOf="@id/sprintt"
+        android:text="Task Name"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Date:"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/sprint"
+        android:textSize="18sp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/startDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/start_date"
+        android:layout_toRightOf="@id/start_date"
+        android:text="Task Name"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/end_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Date:"
+        android:layout_below="@id/startDate"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/endDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/end_date"
+        android:layout_toRightOf="@id/end_date"
+        android:text="Task Name"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>
