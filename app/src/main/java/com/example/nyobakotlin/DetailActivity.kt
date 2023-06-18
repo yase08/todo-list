@@ -1,16 +1,9 @@
 package com.example.nyobakotlin
 
-import android.app.DatePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.DatePicker
-import android.widget.EditText
 import android.widget.TextView
 import com.example.nyobakotlin.data.AppDatabase
-import com.example.nyobakotlin.data.entity.User
-import java.text.SimpleDateFormat
-import java.util.*
 
 class DetailActivity : AppCompatActivity() {
     private lateinit var projectName: TextView

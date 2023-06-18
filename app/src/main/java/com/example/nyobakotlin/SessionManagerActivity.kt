@@ -5,37 +5,26 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.provider.ContactsContract.CommonDataKinds.Email
 
-class SessionManagerActivity(context : Context) {
-    private var context: Context = context
-    private var sharedPreferences: SharedPreferences = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
-    private var editor: SharedPreferences.Editor = sharedPreferences.edit()
+class SessionManagerActivity(private val context: Context) {
 
-    companion object {
-        private const val PREF_NAME = "SESSION"
-        private const val KEY_EMAIL = "EMAIL"
-        private const val KEY_IS_LOGIN = "IS_LOGIN"
-    }
+    private val sharedPreferences = context.getSharedPreferences("my_shared_pref", Context.MODE_PRIVATE)
+    private val editor = sharedPreferences.edit()
 
-    fun login (email: String) {
-        editor.putString(KEY_EMAIL, email)
-        editor.putBoolean(KEY_IS_LOGIN, true)
+    fun saveAuthToken(token: String) {
+        editor.putString("auth_token", token)
         editor.apply()
     }
 
-    fun logout() {
-        editor.clear()
-        editor.commit()
+    fun getAuthToken(): String? {
+        return sharedPreferences.getString("auth_token", null)
+    }
 
-        val intent = Intent(context, LoginActivity::class.java)
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
-        context.startActivity(intent)
+    fun clearAuthToken() {
+        editor.remove("auth_token")
+        editor.apply()
     }
 
     fun isLoggedIn(): Boolean {
-        return sharedPreferences.getBoolean(KEY_IS_LOGIN, false)
-    }
-
-    fun getEmail(): String? {
-        return sharedPreferences.getString(KEY_EMAIL, null)
+        return getAuthToken() != null
     }
 }

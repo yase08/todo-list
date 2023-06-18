@@ -44,7 +44,7 @@ class ProfileFragment : Fragment() {
         logoutButton = view.findViewById(R.id.logoutButton)
 
         logoutButton.setOnClickListener() {
-            sessionManager.logout()
+            sessionManager.clearAuthToken()
             requireActivity().finish()
         }
         return view
